@@ -149,3 +149,35 @@ npm run test:living
 ### TapTap 离线包
 
 运行 `npm run package:taptap`，生成 `artifacts/taptap-v版本号/` 下的 ZIP 与构建报告。包内采用单脚本加载，包含旧内核接口兼容与横屏布局；不自动上传统计。此命令仅构建，不执行上传、提审或上线。
+
+## 常用脚本
+
+开发与测试：
+
+- `npm run dev`：启动本地开发服务器，打开终端中给出的本机地址即可试玩。
+- `npm test`：运行全部单元测试。
+- `npm run check`：检查发行版代码与打包脚本的语法。
+
+旅程自动流程：
+
+- `npm run test:journey`：从一级正常采集与晋升走完九级主线。
+- `npm run test:wilderness`：走完四季、湿度、钓鱼与诱捕的荒野生存流程。
+- `npm run test:expedition`：接续主线继续远征，验证跨图探索与战斗。
+- `npm run test:homestead`：跑通 1.2 的九项委托、农圃与设施改良。
+- `npm run test:frontier`：继续营地经营、生产订单与四级至七级晋升。
+- `npm run test:odyssey`：从空背包完成 2.0 星海回响的探索、供电与装配。
+- `npm run test:coexist`：接续九级存档完成 3.0 共生远征与共生碑。
+- `npm run test:robotics`：验证机械助手的组装、独立采集与自动卸货。
+- `npm run test:countryside`：验证 3.2 养殖、聚落共同事务与自动喂料。
+- `npm run test:living`：验证 3.3 取料组合、资源记忆与两地交付。
+- `npm run test:settlements`：验证 3.4 聚落交谈、交易委托与据点演练。
+- `npm run test:community`：从一级开始造出两种机器人并跑通社区协作。
+- `npm run test:community-crossmap`：接续九级主线完成六地前哨与两轮共建。
+- `npm run test:steam`：验证 4.0 蒸汽工坊的供料生产与接驳搬运。
+
+打包：
+
+- `npm run package:desktop-web`：生成浏览器可直接打开的离线 ZIP 与桌面安装包资源。
+- `npm run desktop:build`：构建桌面安装包，需要 Rust 与对应系统依赖。
+- `npm run package:utools`：生成 uTools 离线版目录，供开发者工具导入并生成 `.upxs`。
+- `npm run package:taptap`：生成 TapTap 离线包的 ZIP 与构建报告。
